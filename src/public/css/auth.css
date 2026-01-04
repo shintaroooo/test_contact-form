@@ -1,0 +1,94 @@
+/* auth 全体背景 */
+.auth-body {
+  background-color: #f1ece6;
+  min-height: 100vh;
+}
+
+/* ヘッダー */
+.auth-header {
+  position: relative;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ロゴ */
+.auth-header .logo {
+  font-size: 2em;
+  color: #7b6651;
+  font-family: 'Playfair Display', serif;
+}
+
+/* 認証リンク */
+.auth-action {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+.auth-action form {
+    margin: 0;
+}
+
+/* ボタン共通（a / button） */
+.auth-action a,
+.auth-action button {
+  background-color: #7b6651;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1; /* 高さズレ防止 */
+}
+
+/* hover */
+.auth-action a:hover,
+.auth-action button:hover {
+  opacity: 0.85;
+}
+
+/* .auth-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #7b6651;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    opacity: 0.85;
+} */
+
+/* メイン */
+.auth-main {
+  padding: 4em 0;
+}
+/* タイトル */
+.auth-main .page-title {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Playfair Display', serif;
+  color: #7b6651;
+  margin-bottom: 2.5em;
+}
+
+/* カード 1/3はここから */
+.auth-content {
+  background: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3em;
+  border-radius: 6px;
+}

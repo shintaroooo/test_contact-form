@@ -1,0 +1,22 @@
+.logout-message {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.logout-message p {
+    font-size: 18px;
+    color: #7b6651;
+    margin-bottom: 30px;
+}
+
+.btn-login {
+    display: inline-block;
+    background-color: #7b6651;
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.btn-login:hover {
+    opacity: 0.85;
+}

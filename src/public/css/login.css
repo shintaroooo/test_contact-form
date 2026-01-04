@@ -1,0 +1,55 @@
+/* 背景 */
+.main {
+  background-color: #f2ece6;
+  min-height: calc(100vh - 80px);
+  padding-top: 40px;
+}
+
+/* ラッパー */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* フォーム */
+.form-group {
+  margin-bottom: 25px;
+}
+
+/* ラベル */
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #7b6651;
+}
+
+/* 入力欄 */
+.form-group input {
+  width: 360px;
+  padding: 12px;
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* ボタン */
+.form-buttons {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.form-buttons button {
+  background-color: #7b6651;
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-buttons button:hover {
+  opacity: 0.85;
+}

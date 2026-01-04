@@ -1,0 +1,23 @@
+.export-container {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.export-message {
+  font-size: 18px;
+  color: #7b6651;
+  margin-bottom: 40px;
+}
+
+.btn-back {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #7b6651;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn-back:hover {
+  opacity: 0.85;
+}

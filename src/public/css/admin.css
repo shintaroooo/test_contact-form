@@ -1,0 +1,315 @@
+/* =========================
+  Admin Common
+========================= */
+.admin-body {
+  background: #ffffff; /* adminは白ベース */
+  color: #7b6651;
+}
+
+/* タイトル（Admin / Search / Export / Reset / Delete 共通） */
+.page-title {
+  text-align: center;
+  font-size: 1.8em;
+  color: #7b6651;
+  margin: 30px 0 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* =========================
+  Header（admin layout）
+========================= */
+.auth-header__admin {
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ロゴ中央固定 */
+  border-bottom: 1px solid #e6e0da;
+  background: #fff;
+}
+
+/* ロゴ */
+.auth-header__admin .logo {
+  margin: 0;
+  font-size: 2em;
+  color: #7b6651;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+/* 右上アクション（logout） */
+.auth-header__admin .auth-action {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.auth-header__admin .auth-action form {
+  margin: 0;
+}
+/* ボタン共通（logoutなど） */
+.auth-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 34px;
+  min-width: 90px;
+  padding: 0 18px;
+
+  border: 1px solid #d9cfc5;
+  background: #7b6651;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.auth-btn:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+  Layout
+========================= */
+.admin-main {
+  padding: 0 0 60px;
+}
+
+.admin-container {
+  width: min(960px, 92%);
+  margin: 0 auto;
+}
+
+/* =========================
+  Search Form
+========================= */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 1100px;
+  margin: 0 auto 20px;
+}
+
+.search-form input[type="text"],
+.search-form select,
+.search-form input[type="date"] {
+  height: 45px;
+  padding: 0 14px;
+  border: 1px solid #d9cfc5;
+  background: #fff;
+  color: #7b6651;
+  font-size: 14px;
+}
+
+.input-keyword {
+  width: 400px;
+}
+.input-gender {
+  width: 80px;
+}
+.input-category {
+  width: 180px;
+}
+.input-date {
+  width: 120px;
+}
+
+.search-form .btn-search,
+.search-form .btn-reset {
+  height: 44px;
+  min-width: 70px;
+  white-space: nowrap;
+  font-size: 14px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form .btn-search {
+  background: #7b6651;
+  color: #fff;
+  border-color: #7b6651;
+  padding: 10px 36px;
+}
+
+.search-form .btn-reset {
+  background: #d7d0c8;
+  color: #7b6651;
+  padding: 10px 36px;
+  text-decoration: none;
+}
+
+/* ボタン横並びにしたい場合（必要なら form の最後の行をまとめる） */
+.search-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* =========================
+  Export
+========================= */
+.admin-export {
+  width: min(960px, 92%);
+  margin-bottom: 10px;
+}
+
+.btn-export {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 18px;
+  background: #e9e1d9;
+  color: #7b6651;
+  text-decoration: none;
+  border: 1px solid #d9cfc5;
+  border-radius: 2px;
+}
+
+.btn-export:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+  Table
+========================= */
+.table-wrapper {
+  width: min(960px, 92%);
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #e6e0da;
+}
+
+.admin-table thead th {
+  background: #7b6651;
+  color: #fff;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.admin-table tbody td {
+  padding: 14px 10px;
+  border-top: 1px solid #eee6df;
+  text-align: center;
+  color: #7b6651;
+  font-size: 14px;
+}
+
+.btn-detail {
+  height: 30px;
+  padding: 0 16px;
+  border: 1px solid #d9cfc5;
+  background: #fff;
+  color: #7b6651;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.btn-detail:hover {
+  background: #f7f2ee;
+}
+
+/* =========================
+  Pagination
+========================= */
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1100px;
+}
+
+/* Laravelのlinks()に合わせる（必要なら調整） */
+.pagination nav {
+  display: flex;
+  gap: 6px;
+}
+
+/* =========================
+  Modal
+========================= */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content {
+  width: min(720px, 92%);
+  background: #fff;
+  border: 2px solid #d9cfc5;
+  border-radius: 4px;
+  padding: 40px 50px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid #d9cfc5;
+  background: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  color: #7b6651;
+}
+
+.modal-detail {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 14px 18px;
+  margin: 0;
+}
+
+.modal-detail dt {
+  font-weight: bold;
+  color: #7b6651;
+}
+
+.modal-detail dd {
+  margin: 0;
+  color: #7b6651;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* 削除ボタン */
+.btn-delete {
+  display: block;
+  margin: 26px auto 0;
+  height: 40px;
+  padding: 0 22px;
+  border: none;
+  background: #d9534f;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-delete:hover {
+  opacity: 0.9;
+}

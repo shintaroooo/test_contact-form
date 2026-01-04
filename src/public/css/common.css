@@ -1,0 +1,56 @@
+/* ===== 共通デザインのみ ===== */
+
+.header {
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ロゴ中央固定 */
+  border-bottom: 1px solid #e6e0da;
+  background: #fff;
+}
+
+/* ロゴ */
+.header .logo {
+  margin: 0;
+  font-size: 2em;
+  color: #7b6651;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+/* フォント・色 */
+body {
+  color: #7b6651;
+  font-family: sans-serif;
+}
+
+/* 必須マーク */
+.required {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+/* 入力の基本見た目（サイズは決めない） */
+input,
+textarea,
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f7f7f7;
+  font-size: 14px;
+}
+
+/* ボタン共通 */
+button {
+  background-color: #7b6651;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}

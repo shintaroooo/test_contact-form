@@ -1,0 +1,57 @@
+/* thanks.css */
+
+/* 外枠 */
+.thanks-wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 背景の "Thank you" テキスト */
+.thanks-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200px;
+  font-family: 'Playfair Display', serif;
+  color: rgba(123, 102, 81, 0.08); /* 薄いブラウン系の透明文字 */
+  white-space: nowrap;
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* 中央メッセージ */
+.thanks-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* メッセージ */
+.thanks-message {
+  font-size: 1.2em;
+  color: #7b6651;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* HOMEボタン */
+.thanks-button {
+  display: inline-block;
+  background-color: #7b6651;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 1em;
+  font-family: 'Playfair Display', serif;
+  transition: opacity 0.3s ease;
+}
+
+.thanks-button:hover {
+  opacity: 0.85;
+}

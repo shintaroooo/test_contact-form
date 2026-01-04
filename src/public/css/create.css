@@ -1,0 +1,81 @@
+/* 全体の幅と中央寄せ */
+.contact-form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* タイトル */
+.page-title {
+  text-align: center;
+  font-size: 1.8em;
+  color: #7b6651;
+  margin: 30px 0 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* 1行 = 左(ラベル) + 右(入力&エラー) の2列 */
+.form-group {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  column-gap: 24px;
+  align-items: start;
+  margin-bottom: 24px;
+}
+
+/* ラベル（左列） */
+.form-group > label {
+  font-weight: bold;
+  white-space: nowrap;
+  padding-top: 10px; /* 入力の高さに合わせる */
+}
+
+/* 右列：入力ブロック */
+.name-inputs,
+.tel-inputs,
+.gender-options {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* エラーは「右列の下」に落とす（2列目に配置） */
+.form-error {
+  grid-column: 2;
+  margin-top: 6px;
+  color: #d9534f;
+  font-size: 0.85em;
+  line-height: 1.2;
+}
+
+/* 入力幅（サンプル寄せ） */
+.name-inputs input {
+  width: 255px;
+}
+
+.tel-inputs input {
+  width: 150px;
+  text-align: center;
+}
+
+/* 単体入力の幅（右列基準で統一） */
+input[type="email"],
+input[name="address"],
+input[name="building"],
+textarea {
+  width: 525px;
+  max-width: 100%;
+}
+
+select {
+  width: 200px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ボタン */
+.form-buttons {
+  text-align: center;
+  margin-top: 40px;
+}

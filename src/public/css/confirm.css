@@ -1,0 +1,83 @@
+/* タイトル */
+.page-title {
+  text-align: center;
+  font-size: 1.8em;
+  color: #7b6651;
+  margin: 30px 0 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* ===== Confirm 全体 ===== */
+.confirm-box {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===== テーブル ===== */
+.confirm-table {
+  width: 70%;
+  margin:0 auto;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+/* 左側（項目名） */
+.confirm-table th {
+  width: 30%;
+  background-color: #b6a193; /* 茶色 */
+  color: #fff;
+  text-align: left;
+  padding: 16px 20px;
+  font-weight: normal;
+  vertical-align: top;
+  border: 1px solid #e5ddd6;
+}
+
+/* 右側（値） */
+.confirm-table td {
+  width: 70%;
+  background-color: #fff;
+  padding: 16px 20px;
+  color: #7b6651;
+  border: 1px solid #e5ddd6;
+  line-height: 1.6;
+}
+
+/* 改行を含むお問い合わせ内容 */
+.confirm-table td br {
+  margin-bottom: 6px;
+}
+
+/* ===== ボタンエリア ===== */
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* 共通ボタン */
+.form-buttons button {
+  min-width: 120px;
+  padding: 10px 0;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 送信ボタン */
+.form-buttons button[name="action"][value="submit"] {
+  background-color: #7b6651;
+  color: #fff;
+}
+
+/* 修正ボタン */
+.form-buttons button[name="action"][value="back"] {
+  background-color: #d7d0c8;
+  color: #7b6651;
+}
+
+/* ホバー */
+.form-buttons button:hover {
+  opacity: 0.85;
+}
