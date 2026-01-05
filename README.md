@@ -33,7 +33,7 @@ Laravel環境構築
 ・CSVエクスポート機能
 
 ##ER図
-![ER図](test_contact-form/docs/er.png)
+![ER図](./docs/er.png)
 
 ##URL
 開発環境を参照
